@@ -3,10 +3,14 @@ const input1 = document.querySelector("#calculoNum1");
 const input2 = document.querySelector("#calculoNum2");
 const btn = document.querySelector("#btnCalcular");
 const pResult = document.querySelector("#result");
+const form = document.querySelector("#form");
 
-btn.addEventListener('click', btnOnClick)
+form.addEventListener("submit", sumarInputValues);
 
-function btnOnClick() {
+// btn.addEventListener('click', btnOnClick)
+
+function sumarInputValues(event) {
+  event.preventDefault();
   const sumaInputs = parseFloat(input1.value) + parseFloat(input2.value);
   pResult.innerText = "Resultado: " + sumaInputs;
 }

@@ -8,16 +8,18 @@
   </head>
   <body>
     <h1>Manipulación del DOM</h1>
-    <input id="calculoNum1" placeholder="Escribe algo ..." />
-    <input
-      onchange="console.log('cambio el input')"
-      id="calculoNum2"
-      placeholder="Escribe algo ..."
-    />
-    <button id="btnCalcular">
-      Calcular
-    </button>
-    <p id="result"></p>
+    <form id="form">
+        <input id="calculoNum1" placeholder="Escribe algo ..." />
+        <input
+        onchange="console.log('cambio el input')"
+        id="calculoNum2"
+        placeholder="Escribe algo ..."
+        />
+        <button id="btnCalcular">
+        Calcular
+        </button>
+        <p id="result"></p>
+    </form>
     <script src="./script.js"></script>
   </body>
 </html>
